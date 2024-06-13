@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Board</title>
+  <style>
+    .message {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .actions {
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Message Board</h1>
+  <div>
+    <h2>Register</h2>
+    <form id="register-form">
+      <input type="email" id="register-email" placeholder="Email" required />
+      <input type="password" id="register-password" placeholder="Password" required />
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <div>
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="email" id="login-email" placeholder="Email" required />
+      <input type="password" id="login-password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  <div>
+    <h2>Post a Message</h2>
+    <form id="message-form">
+      <input type="text" id="message-content" placeholder="Your message" required />
+      <button type="submit">Post Message</button>
+    </form>
+  </div>
+  <div>
+    <h2>Messages</h2>
+    <ul id="messages-list"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
