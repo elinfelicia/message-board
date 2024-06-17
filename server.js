@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const prisma = require('./prisma/client'); // Import Prisma client
+const prisma = require('./prisma/client'); 
 const userRoutes = require('./routes/user');
 const messageRoutes = require('./routes/message');
 const dotenv = require('dotenv');
@@ -8,7 +8,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 app.use(express.json());
 
-// Serve static files from the 'public' directory
+
 app.use(express.static('public'));
 
 app.use('/users', userRoutes);
